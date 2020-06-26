@@ -1,24 +1,14 @@
 <template>
-  <v-app class="vapp">
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <router-view/>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'App',
-  data() {
-    return {
-
-    }
-  }
-}
-</script>
-
-<style scoped>
-.vapp {
-  background: white !important;
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 </style>
