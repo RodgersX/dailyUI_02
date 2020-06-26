@@ -49,7 +49,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <div class="form-inline">
                 <a href="#" class="card-link text-danger">buy now</a>
-                <p class="card-link ml-auto">$ {{ prod.price }}</p>
+                <p class="card-link ml-auto mt-3">$ {{ prod.price }}</p>
               </div>
             </div>
           </div>
@@ -58,8 +58,20 @@
     </div>
 
     <!-- fluid grid  -->
-    <div class="images">
-      
+    <div class="images my-5">
+      <div class="row ml-auto">
+        <div class="col">
+          <img width="100%" height="400px" :src="require('@/assets/image_5.png')">
+        </div>
+        <div class="col">
+          <div class="why row mb-3">
+            <div>WHY US</div>
+          </div>
+          <div class="row">
+            <img width="70%" height="150px" :src="require('@/assets/image 4.png')">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -93,6 +105,22 @@ export default {
 .navbar-brand {
   position: relative;
   top: 1.5rem;
+}
+
+.images {
+  padding-left: 7rem;
+}
+
+.why {
+  background: url(../assets/image_6.png);
+  background-size: cover;
+  width: 74%;
+  color: white;
+  height: 58%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>
