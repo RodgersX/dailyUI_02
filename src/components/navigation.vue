@@ -19,7 +19,7 @@
           </ul>
           </div>
 
-          <div class="icons">
+          <div class="icons hidden-md-and-up">
             <v-btn class="mx-3" icon color="black"><i class="bx bx-search-alt-2 "></i></v-btn>
             <v-btn class="mx-3" icon color="black"><i class="bx bxs-lock-alt"></i></v-btn>
           </div>
